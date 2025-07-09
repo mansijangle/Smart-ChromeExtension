@@ -1,0 +1,19 @@
+{
+  "name": "Smart Tab Manager",
+  "description": "Closes least used tabs automatically based on LFU cache.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs", "storage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "logo.jpg"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "icons": {
+    "128": "logo.jpg"
+  }
+}
